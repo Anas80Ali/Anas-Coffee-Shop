@@ -16,7 +16,8 @@ justify-items: center;
 }
 
 img.center {
-    box-shadow: 10px 10px 10px rgb(39, 13, 25);
+    box-shadow: 0 2px 15px rgba(0,0,0,0.5);
+    border-radius: 5px;
   }
   
   
@@ -58,16 +59,16 @@ img.center {
     list-style-type: none; 
     padding: 0%; 
     margin: 0; 
+    z-index: 999;
 
 }   
 
 .navbar li {
     text-decoration: none;
-    margin-top: 2.5%;
-    margin-left: 5%;
+    margin-top: 2.8%;
+    margin-left: 4.8%;
     color: #ffffff;
-    display: inline-block;
-    margin-right: 5px; 
+    display: inline-block; 
 
     
 
@@ -179,7 +180,7 @@ img.center {
 }
 
 .btn-white {
-    background-color: #79123d;
+    background-color: #2f332d;
     color: #ffffff;
 }
 
@@ -223,7 +224,7 @@ img.center {
 }
 
 
-.footer ul {
+.mainfooter ul {
    
     display: flex;
     justify-content: space-around;
@@ -235,7 +236,7 @@ img.center {
     align-content: center;
 }   
 
-.footer li {
+.mainfooter li {
 
     color: #ffffff;
     display: inline-block;
@@ -243,7 +244,7 @@ img.center {
     
 }
 
-.footer a {
+.mainfooter a {
     text-decoration: none;
     width: 130px;
     color: #ffffff;
@@ -271,6 +272,7 @@ img.center {
 }
 
 .product-image {
+    width: 90%;
     align-items: center;
     align-content: center;
     max-width: 100%;
@@ -291,22 +293,256 @@ img.center {
 }
 
 .product-description {
-    border-radius: 10px;
     text-align: center;
+    border-radius: 50px;
+    width: 80%;
     align-items: center;
     align-content: center;
-    padding: 5%;
-    background-color: rgba(255, 221, 235, 0.7);
+    padding: 2%;
+    margin-left: 8%;
+    background-color: rgba(126, 122, 122, 0.5);
     font-weight: bolder;
 }
 
 .product-price {
-    border-radius: 10px;
+    border-radius: 50px;
     text-align: center;
     align-items: center;
     align-content: center;
     padding: 2%;
-    background-color: rgba(255, 221, 235, 0.7);
+    width: 40%;
+    margin-left: 30%;
+    background-color: rgba(126, 122, 122, 0.5);
     font-weight: bolder;
     color: rgb(4, 83, 4);
 }
+
+
+
+
+.container4 {
+    
+    max-width: 60%;
+    margin: 0 auto;
+   
+}
+
+
+
+header h1 {
+    margin: 0;
+}
+
+.intro {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.team {
+    margin: 40px 0;
+}
+
+.team h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.team-member {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(160, 62, 62, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.team-member img {
+    border-radius: 50%;
+    margin-right: 20px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.team-member-info {
+    max-width: 800px;
+}
+
+.team-member-info h3 {
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+
+
+
+.container5 {
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+
+
+header h1 {
+    margin: 0;
+}
+
+.contact-info, .contact-form, .map {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.contact-info h2, .contact-form h2, .map h2 {
+    margin-top: 0;
+}
+
+.contact-info .details {
+    margin-top: 10px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-top: 10px;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact-form button {
+    margin-top: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}
+
+.map iframe {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+.slideshow-container {
+    box-shadow: 0 2px 15px rgba(0,0,0,0.5);
+    position: relative;
+    max-width: 100%;
+    margin: 10%;
+    overflow: hidden;
+    border-radius: 1%;
+}
+
+.slides {
+    display: flex;
+    width: 100%;
+    transition: transform 3s ease;
+    animation: slideAnimation 50s infinite;
+}
+
+.slide {
+    
+    width: 100%;
+    flex: 0 0 101.8%;
+}
+
+img {
+    width: 99%;
+    vertical-align: middle;
+}
+
+input[name="slides"] {
+    display: none;
+}
+
+
+.navigation {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+}
+
+.nav-dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.1s ease;
+}
+
+input[name="slides"]:checked + .nav-dot {
+    background-color: #717171;
+}
+
+
+
+@keyframes slideAnimation {
+    0% { transform: translateX(0); }
+    10% { transform: translateX(0); } /* Stay on the first slide */
+    15% { transform: translateX(calc(-100% - 20px)); } /* Move to the second slide */
+    25% { transform: translateX(calc(-100% - 20px)); }
+    30% { transform: translateX(calc(-200% - 40px)); } /* Move to the third slide */
+    40% { transform: translateX(calc(-200% - 40px)); }
+    45% { transform: translateX(calc(-300% - 60px)); } /* Move to the fourth slide */
+    55% { transform: translateX(calc(-300% - 60px)); }
+    60% { transform: translateX(calc(-400% - 80px)); } /* Move to the fifth slide */
+    70% { transform: translateX(calc(-400% - 80px)); }
+    75% { transform: translateX(calc(-500% - 100px)); } /* Move to the sixth slide */
+    85% { transform: translateX(calc(-500% - 100px)); }
+    90% { transform: translateX(calc(-600% - 120px)); } /* Move to the seventh slide */
+    100% { transform: translateX(calc(-600% - 120px)); }
+    105% { transform: translateX(calc(-700% - 140px)); } /* Move to the eighth slide */
+    115% { transform: translateX(calc(-700% - 140px)); }
+    120% { transform: translateX(calc(-800% - 160px)); } /* Move to the ninth slide */
+    130% { transform: translateX(calc(-800% - 160px)); }
+    135% { transform: translateX(calc(-900% - 180px)); } /* Move to the tenth slide */
+    145% { transform: translateX(calc(-900% - 180px)); }
+    150% { transform: translateX(calc(-1000% - 200px)); } /* Move back to the first slide */
+    160% { transform: translateX(calc(-1000% - 200px)); }
+    165% { transform: translateX(calc(-1100% - 220px)); } /* Move to the second slide */
+    175% { transform: translateX(calc(-1100% - 220px)); }
+    180% { transform: translateX(calc(-1200% - 240px)); } /* Move to the third slide */
+    190% { transform: translateX(calc(-1200% - 240px)); }
+    195% { transform: translateX(calc(-1300% - 260px)); } /* Move to the fourth slide */
+    205% { transform: translateX(calc(-1300% - 260px)); }
+    210% { transform: translateX(calc(-1400% - 280px)); } /* Move to the fifth slide */
+    220% { transform: translateX(calc(-1400% - 280px)); }
+    225% { transform: translateX(calc(-1500% - 300px)); } /* Move to the sixth slide */
+    235% { transform: translateX(calc(-1500% - 300px)); }
+    240% { transform: translateX(calc(-1600% - 320px)); } /* Move to the seventh slide */
+    250% { transform: translateX(calc(-1600% - 320px)); }
+    255% { transform: translateX(calc(-1700% - 340px)); } /* Move to the eighth slide */
+    265% { transform: translateX(calc(-1700% - 340px)); }
+    270% { transform: translateX(calc(-1800% - 360px)); } /* Move to the ninth slide */
+    280% { transform: translateX(calc(-1800% - 360px)); }
+    285% { transform: translateX(calc(-1900% - 380px)); } /* Move to the tenth slide */
+    295% { transform: translateX(calc(-1900% - 380px)); }
+    300% { transform: translateX(calc(-2000% - 400px)); } /* Move back to the first slide */}
